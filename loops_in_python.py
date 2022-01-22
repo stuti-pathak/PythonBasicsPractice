@@ -30,8 +30,9 @@ from math import sqrt
 def variable_arguments(*params1, **params):
     # print("variable1 :",variable1)
     # print("variable2 :",variable2)
-    print("params1 :",params1[0][0])
-    print("params1 :",params1[1])
+    print("varargs",params1)
+    print("first params1 :",params1[0])
+    print("second params1 :",params1[1])
     print("params2 :",params)
 
 
@@ -40,7 +41,8 @@ def variable_arguments(*params1, **params):
 # import_demo.square()
 # empty_function()
 my_tuple = (1, 2, 3,4,5,6,7)
+my_list=[1,2]
 my_dict = {"Language1": "Python", "Language2": "Java",1:"value1"}
-variable_arguments(my_tuple,my_dict,key1="value1")
+variable_arguments(my_tuple,my_dict,key1="value",key2="value2")
 
 # print(sqrt(1331))

@@ -7,5 +7,5 @@ class ContactCustomException(Exception):
         return self.message
 
 
-obj=ContactCustomException("hfhfhfhf")
-print(obj)
+# obj=ContactCustomException("hfhfhfhf")
+# print(obj)

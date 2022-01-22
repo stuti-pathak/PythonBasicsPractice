@@ -1,11 +1,12 @@
 def divide():
     a = 5
-    b = 0
+    b = 4
     try:
+        # c=a/b
         if b == 0:
-            raise ZeroDivisionError("divide by zero exception")
-        # else:
-        #     raise ValueError("value error is raised")
+            raise ZeroDivisionError("give proper value othre than 0")
+        else:
+            raise ValueError("value error is raised")
     except ValueError as value_error:
         print(value_error.__str__())
     except ZeroDivisionError as exc:
